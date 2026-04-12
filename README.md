@@ -20,7 +20,7 @@ with absorbing boundary conditions $\rho|_{\partial\Omega}=0$ and known initial 
 
 $$\min_{\mu} \; d\!\left(\nu_\rho^\mu,\; \nu_{\rho}^{\text{obs}}\right)$$
 
-where $\nu_\rho^\mu = \Lambda_{\mu\#}\text{Unif}(0,1)$ is the distribution of density snapshots induced by the candidate drift $\mu$, and $d$ is a distribution distance.
+where $\nu_\rho^\mu$ is the pushforward of $\text{Unif}(0,1)$ through the map $t \mapsto \rho_\mu(\cdot,t)$, and $d$ is a distribution distance.
 
 ## Method
 
