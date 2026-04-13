@@ -20,7 +20,7 @@ $$\mathcal{L}(\mu) = -\sum_{i=1}^N \log \left( \int_0^T \prod_{r=1}^m \rho_\mu(X
 
 ### Stable Implementation (log-sum-exp)
 
-$$\mathcal{L}(\mu) = -\sum_{i=1}^N \operatorname{LSE}_n \left( \log w_n + \sum_{r=1}^m \log \rho_\mu(X_{i,r},t_n) \right)$$
+$$\mathcal{L}(\mu) = -\sum_{i=1}^N \text{LSE}_n \left( \log w_n + \sum_{r=1}^m \log \rho_\mu(X_{i,r},t_n) \right)$$
 
 ### Pipeline
 

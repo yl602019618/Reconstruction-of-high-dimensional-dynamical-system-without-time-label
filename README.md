@@ -77,7 +77,7 @@ $$t_i \sim \text{Unif}(0,1), \quad X_{i,1},\dots,X_{i,m} \overset{\text{i.i.d.}}
 
 **Marginal likelihood:** Treat $t_i$ as latent variables and integrate them out.
 
-$$\mathcal{L}(\mu) = -\sum_{i=1}^N \operatorname{LSE}_n \left( \log w_n + \sum_{r=1}^m \log \rho_\mu(X_{i,r},t_n) \right)$$
+$$\mathcal{L}(\mu) = -\sum_{i=1}^N \text{LSE}_n \left( \log w_n + \sum_{r=1}^m \log \rho_\mu(X_{i,r},t_n) \right)$$
 
 ### Key Results
 

@@ -180,7 +180,7 @@ To avoid numerical underflow:
 \[
 \log \sum_n w_n \prod_r \rho
 =
-\operatorname{LSE}_n
+\text{LSE}_n
 \left(
 \log w_n + \sum_r \log \rho_\mu(X_{i,r},t_n)
 \right).
@@ -191,7 +191,7 @@ Final loss:
 \mathcal L(\mu)
 =
 -\sum_{i=1}^N
-\operatorname{LSE}_n
+\text{LSE}_n
 \left(
 \log w_n + \sum_{r=1}^m \log \rho_\mu(X_{i,r},t_n)
 \right).
