@@ -105,6 +105,19 @@ Two-phase training with $N=200$ observations. No oracle information used.
 
 ![2D Joint Inversion](figures/2d_joint_inversion.png)
 
+#### Spatially Varying Diffusion Recovery
+
+True diffusion: $D(x,y) = 0.5 + 0.2\exp(-(x^2+y^2))$ (Gaussian bump). Two-phase training with $N=200$.
+
+| | Drift MSE | Diffusion MSE |
+|---|---|---|
+| Constant $D=0.5$ | 0.96 | 0.003 |
+| **Varying $D(x,y)$** | **1.15** | **0.0035** |
+
+The method successfully recovers the spatial structure of the Gaussian bump in $D(x,y)$. Increasing $N$ to 500 further improves drift recovery (MSE 0.69) but reveals a drift-diffusion compensation effect where $D$ accuracy plateaus.
+
+![2D Varying D](figures/2d_joint_varD.png)
+
 ## Repository Structure
 
 ```
@@ -123,7 +136,8 @@ unlabel_pde/
     ├── fpe_solver_2d.py            # 2D FPE solver (constant & variable D)
     ├── test_solver_2d.py           # 2D solver tests
     ├── optimize_2d_full_poly.py    # Complete cubic polynomial inversion
-    └── joint_2d_v2.py              # Joint inversion (two-phase, poly+NN)
+    ├── joint_2d_v2.py              # Joint inversion, constant D (two-phase)
+    └── joint_2d_varD.py            # Joint inversion, spatially varying D
 ```
 
 ## Usage
