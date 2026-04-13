@@ -1,6 +1,6 @@
-# Density-Based Drift Recovery
+# Density-Based Reconstruction
 
-Recovering unknown drift (and diffusion) from **time-unlabeled density snapshots** via PDE-constrained optimization.
+Reconstructing stochastic dynamics (drift and diffusion) from **time-unlabeled density snapshots** via PDE-constrained optimization.
 
 ## Problem Setup
 

@@ -1,6 +1,6 @@
-# Particle-Based Drift Recovery
+# Particle-Based Reconstruction
 
-Recovering unknown drift (and diffusion) from **time-unlabeled particle observations** via marginal likelihood optimization.
+Reconstructing stochastic dynamics (drift and diffusion) from **time-unlabeled particle observations** via marginal likelihood optimization.
 
 ## Problem Setup
 

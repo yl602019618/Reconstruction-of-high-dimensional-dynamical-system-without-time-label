@@ -1,6 +1,6 @@
-# Drift Recovery from Unlabeled Snapshots
+# Reconstruction of High-Dimensional Stochastic Dynamics from Unlabeled Snapshots
 
-Recovering unknown drift (and diffusion) in Fokker-Planck / SDE systems from **time-unlabeled observations** via PDE-constrained optimization.
+Reconstructing the governing equations (drift and diffusion) of stochastic dynamical systems from **time-unlabeled observations** via PDE-constrained optimization.
 
 We consider two observation settings:
 1. **Density-based:** full density snapshots $\rho(\cdot, t_i)$ at unknown times
